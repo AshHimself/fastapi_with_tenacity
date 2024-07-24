@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fastapi-with-tenacity"
+version = "0.1.0"
+description = ""
+authors = ["Ash Smith <ash.smith@south32.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.1"
+uvicorn = "^0.30.3"
+faker = "^26.0.0"
+tenacity = "^8.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
