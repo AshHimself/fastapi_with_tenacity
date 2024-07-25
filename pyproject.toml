@@ -11,6 +11,8 @@ fastapi = "^0.111.1"
 uvicorn = "^0.30.3"
 faker = "^26.0.0"
 tenacity = "^8.5.0"
+requests = "^2.32.3"
+loguru = "^0.7.2"
 
 
 [build-system]
