@@ -80,7 +80,7 @@ class ThrottlingMiddleware(BaseHTTPMiddleware):
                 
                 # Increment request counter
                 async with counter_lock:
-                    nonlocal request_counter
+                    # nonlocal request_counter
                     request_counter += 1
                 
                 # Process the request
