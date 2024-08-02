@@ -9,6 +9,7 @@ from tenacity import (
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from loguru import logger
+from simple_chalk import chalk, green
 
 # Set the base URL and pagination parameters
 base_url = "http://localhost:8000/users/"
@@ -80,4 +81,5 @@ if __name__ == "__main__":
     start_time = time.time()
     fetch_all_users()
     end_time = time.time()
-    print(f"Time taken to fetch all users: {end_time - start_time} seconds")
+    run_time = chalk.bold(f"{end_time - start_time} seconds")
+    print(green(f"Time taken to fetch all users: {run_time}"))
